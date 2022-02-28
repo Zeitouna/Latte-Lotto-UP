@@ -1,0 +1,36 @@
+{
+  "name": "latte-lotto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server/server.js",
+    "seeds": "node server/seeds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queenmcsteve/latte-lotto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queenmcsteve/latte-lotto/issues"
+  },
+  "homepage": "https://github.com/queenmcsteve/latte-lotto#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "jquery": "^3.6.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.13.0",
+    "uuid": "^8.3.2"
+  }
+}

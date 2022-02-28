@@ -1,0 +1,252 @@
+:root {
+    --backGr: #967259;
+    --textstyle: "Lobster", cursive;
+    --textsize: 1.2em;
+    --textcolor: #9c9188;
+    --textstyle2: "Lobster Two", cursive;
+  }
+  * {
+    font-family: var(--textstyle);
+    font-size: large;
+  }
+  
+  body {
+    background-color: var(--backGr);
+    font-size: large;
+  }
+
+  .brand-logo {
+    display: none;
+    left: 5%;
+    color: #ece0d1;
+  }
+  
+  .nav-wrapper {
+    color: #634832;
+    background: #967259;
+    font:var(--textcolor);
+  }
+
+ 
+
+ 
+
+  .button {
+      position: absolute;
+      top: 50%;
+  }
+
+#btn {
+    position: absolute;
+    margin: 0px auto;
+      left: 30%;
+      margin-right: 10% ;
+      margin-top: 5px;
+      border-color: white;
+
+      background-color:transparent;
+      color: #ece0d1;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 5px;
+    
+}
+
+#coffeeQuote {
+    position: absolute;
+    width: 750px;
+    margin-top:80px ;
+    left: -40%;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    
+
+}
+
+
+ .facts {
+      position: absolute;
+      left: 35%;
+      top: 20%;
+      color: #ece0d1;
+  }
+
+/* body {
+    animation-name: colorChange;
+    animation-duration: 5s;
+    
+}
+
+
+@keyframes colorChange {
+    0%   {background-color: #ece0d1; left:0px; top:0px;}
+    25%  {background-color: #dbc1ac; left:200px; top:0px;}
+    50%  {background-color: #967259; left:200px; top:200px;}
+    75%  {background-color: #634832; left:0px; top:200px;}
+    100% {background-color: #967259; left:200px; top:200px;}
+  } */
+
+
+
+
+
+  .liquid {
+    position: fixed;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 100%;
+    height: 100% ;
+    border-color: transparent;
+    background:url(../images/beans.png);
+    /* background: url(https://thumbs.dreamstime.com/b/coffee-bean-wave-3553496.jpg); */
+    background-position: 2000px 0px;
+    background-repeat: repeat-x;
+    animation: moving 6s ease-in-out infinite;
+    animation-iteration-count: 1;
+  }
+  
+  .liquid:before {
+    content: '';
+    position: fixed;
+    bottom: 0px;;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  }
+  
+  @keyframes moving {
+    0% {background-position: -500px 0px;}
+    100% {background-position: 2000px 0px;}
+  }
+
+  @media (max-width: 1280px) {
+    .liquid {
+      top: 129%;
+      left: 46%;
+      display: block;
+      bottom: 0px;
+      font-size: smaller;
+       margin-left: 15px;
+          
+    }
+  }
+
+ 
+
+  @media (max-width: 1280px)  {
+    .facts {
+      top: 20%;
+      left: 18%;
+      display: block;
+      position: absolute;
+      font-size: smaller;
+       margin-left: 15px;
+          
+    }
+  }
+
+  @media (max-width: 1280px) {
+    #btn {
+      top: 90%;
+      left: 10%;
+      display: block;
+      position: absolute;
+      font-size: smaller;
+       margin-left: 15px;
+          
+    }
+  }
+
+
+  @media (max-width: 1280px) {
+    #coffeeQuote {
+      top: 100%;
+      margin-left: 70px;
+      display: block;
+      position: absolute;
+      font-size: smaller;
+      text-align: center;
+      max-width: 300px;
+          
+    }
+  }
+
+
+  
+/* Navbar Responsive */
+.navbar {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  font:var(--textcolor) ;
+}
+
+
+
+
+.topnav .active {
+  float: left;
+  display: block;
+  color: #ece0d1;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .top-nav a:not(:first-child) {display: none;}
+  .right-nav a:not(:last-child) {display: none;}
+  .topnav a.icon {
+    
+    display: block;
+    background-color: transparent;
+    color: #ece0d1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .right-nav a{
+    font-size: 11px;
+    padding-top: 5px;
+  }
+}
+
+
+.right-nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 46px;
+  text-decoration: none;
+  font-size: 15px;
+}
+

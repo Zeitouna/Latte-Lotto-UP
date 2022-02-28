@@ -1,0 +1,49 @@
+<div>
+  <h1>SIGNUP PAGE</h1>
+  <form action="/api/signup" method="post">
+    <label for="first_name"><b>First Name: </b></label>
+    <input
+      type="text"
+      placeholder="Enter first name"
+      name="first_name"
+      id="first_name"
+      required
+    />
+    <br />
+    <label for="last_name"><b>Last Name: </b></label>
+    <input
+      type="text"
+      placeholder="Enter surname"
+      name="last_name"
+      id="last_name"
+      required
+    />
+    <br />
+    <label for="email"><b>Email Address: </b></label>
+    <input
+      type="text"
+      placeholder="Enter email address"
+      name="email"
+      id="email"
+      required
+    />
+    <br />
+    <label for="user_group"><b>User Group: </b></label>
+    <select name="user_group" id="user_group" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+        <label for="cadence"><b></b>: </b></label>
+    <select name="cadence" id="cadence" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select>
+
+  </form>
+</div>

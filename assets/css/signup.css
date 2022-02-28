@@ -1,0 +1,234 @@
+:root {
+    --backGr: #dbc1ac;
+    --textstyle: 'Lobster', cursive;;
+    --textsize: 1.2em;
+    --textcolor: #634832;
+  }
+  * {
+    font-family: var(--textstyle);
+    font-size: large;
+  }
+  
+  body {
+    background-color: var(--backGr);
+    font-size: large;
+  }
+  
+  .container {
+    display: none;
+  }
+
+  .mainPage {
+    display: flex;
+    display: grid;
+    display: block;
+    text-align: center;
+    flex: 1 1 65%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 130px;
+  }
+
+  .brand-logo {
+    display: none;;
+    left: 5%;
+    color: #dbc1ac;
+  }
+
+  .home-button {
+    font-family:var(--textstyle);
+    font-size: larger;
+   
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 3%;
+}
+
+#latteBtn{
+    text-decoration: none;
+    color: var(--textcolor); 
+    font-size: 30px;
+}
+
+  .account {
+      position: absolute;
+      top: 35%;
+      left: 10%;
+  }
+
+  #create_account {
+      position: absolute;
+      left: 10%;
+      top: 25%;
+      color: var(--textcolor);
+  }
+  .big_cup {
+    position: absolute;
+    left: 75%;
+    top: 2%;    
+    margin: -30px;
+    animation: mymove 5s;
+    animation-iteration-count: 1;
+}
+
+#bigCup {
+    animation-timing-function: ease;
+}
+
+@keyframes mymove {
+    from {left: -100px; }
+    to{ right: 10px; }
+  }
+  
+
+#cloud {
+    position: absolute;
+    left:43%;
+    top: 25%;
+    opacity: 70%;
+}
+
+#have-account {
+    position: absolute;
+    left: 47%;
+    top: 53%; 
+    transform: scale(0.9);
+    color: var(--textcolor);
+   
+}
+
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    padding: 5px;
+    padding-right: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+#last_name{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    padding: 5px;
+    padding-right: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+}
+#email{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    padding: 5px;
+    padding-right: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+.dropbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    color:#634832 ;
+
+    padding: 5px;
+    padding-right: 185px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:#ece0d1;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdownCadence {
+    position: absolute;
+    
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #634832;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #967259;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+#password{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    padding: 5px;
+    padding-right: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+#confirm{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ece0d1;
+    padding: 5px;
+    padding-right: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+
+
+
+#no-deco{
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+.signUp {
+    transform: translate(65%, 150%);
+    
+}
+
+#signUpBtn {
+    color: var(--backGr);
+    background-color: var(--textcolor);
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 40px;
+    font-family: var(--textstyle2);
+    text-decoration: none;
+}

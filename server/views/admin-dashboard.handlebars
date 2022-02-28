@@ -1,0 +1,21 @@
+<form action="/admin/generate" method="get">
+  <div>
+    <input type="submit" id="matchPairs" value="MATCH" />
+  </div>
+</form>
+<form action="/admin/sendemails" method="get">
+  <div>
+    <input type="submit" id="sendEmails" value="SEND MAILS" />
+  </div>
+</form>
+<button id="sendEmails">SEND MAILS</button>
+
+<hr />
+Matches:
+{{#each matches as |pair|}}
+  <br />
+  {{pair.match1.first_name}}
+  ->
+  {{pair.match2.first_name}}
+  <br />
+{{/each}}

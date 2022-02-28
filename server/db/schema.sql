@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS latte_db;
+CREATE DATABASE latte_db;

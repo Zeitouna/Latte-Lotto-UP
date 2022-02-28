@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="assets/css/contactUs.css" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!--Send email from javascript-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contactus.js"></script>
+      <!--Link to javascript-->
+      <script src="assets/js/responsive-sidebar.js"></script>
+
+      <!--responsive navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+      <!--Navbar-->
+      <nav class="navbar">
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Latte-Lotto</a>
+          <section class="right-nav">
+            <a id="about-bar" href="aboutUs.html">About us</a>
+            <a id="contact-bar" href="ContactUs.html">Contact Us</a>
+            <a id="know-bar" href="DidYouKnow.html">Did you know?</a>
+          
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </section>
+        </div>
+    </nav>
+    <!--Contact Us form-->
+    <form
+      action="https://formsubmit.co/olivierberlin1998@hotmail.de"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="page">
+        <label class="field field_v1">
+          <input
+            type="text"
+            name="name"
+            class="field__input"
+            placeholder="ex: Hugo"
+          />
+          <span class="field__label-wrap">
+            <span class="field__label">First name</span>
+          </span>
+        </label>
+        <label class="field field_v2">
+          <input
+            type="last name"
+            name="last name"
+            class="field__input"
+            placeholder="ex: Rodriguez"
+          />
+          <span class="field__label-wrap">
+            <span class="field__label">Last name</span>
+          </span>
+        </label>
+        <label class="field field_v3">
+          <input
+            type="email"
+            name="email"
+            class="field__input"
+            placeholder="ex: hugo.rodi99@ya.edu"
+          />
+          <span class="field__label-wrap">
+            <span id="email" class="field__label">E-mail</span>
+          </span>
+        </label>
+        <label class="field field_v3">
+          <input
+            type="message"
+            name="message"
+            class="field__input"
+            placeholder="How can we help you?"
+          />
+          <span class="field__label-wrap">
+            <span id="message" class="field__label">Message</span>
+          </span>
+        </label>
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://latte-lotto.herokuapp.com/ContactUs.html"
+        />
+        <!-- <input type="hidden" name="_next" value="https://latte-lotto.herokuapp.com/ContactUs.html"> -->
+      </div>
+      <div class="button">
+        <button
+          id="hoverBtn"
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Send
+        </button>
+      </div>
+    </form>
+
+    <!-- <section class="card #fff3e0 orange lighten-5">
+      <div class="contact-us">
+        <div class="name">
+          <textarea name="name" id="name" cols="30" rows="10" class="mailme">
+Your Name*</textarea
+          >
+        </div>
+        <div class="mail">
+          <textarea name="" id="email" cols="30" rows="10" class="mailme">
+Your E-mail*</textarea
+          >
+        </div>
+        <div class="message">
+          <textarea name="" id="email" cols="30" rows="10" class="mailme">
+Your Message*</textarea
+          >
+        </div>
+        
+      </div>
+      <div class="button">
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </section> -->
+  </body>
+</html>
