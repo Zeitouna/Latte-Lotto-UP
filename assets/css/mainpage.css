@@ -1,24 +1,24 @@
 :root {
-    --backGr: #634832;
-    --textstyle: 'Lobster', cursive;;
-    --textsize: 1.2em;
-    --textcolor: #ece0d1;
-  }
-  * {
-    font-family: var(--textstyle);
-    font-size: large;
-  }
-  
-  body {
-    background-color: var(--backGr);
-    font-size: large;
-  }
-  
-  /* .container {
+  --backGr: #634832;
+  --textstyle: "Lobster", cursive;
+  --textsize: 1.2em;
+  --textcolor: #ece0d1;
+}
+* {
+  font-family: var(--textstyle);
+  font-size: large;
+}
+
+body {
+  background-color: var(--backGr);
+  font-size: large;
+}
+
+/* .container {
     display: none;
   } */
 
-  /* .mainPage {
+/* .mainPage {
     display: flex;
     display: grid;
     display: block;
@@ -30,78 +30,83 @@
     margin-top: 130px;
   } */
 
-  .active{
-    margin-left: 10px;
-    color: #ece0d1;
-  }
+.active {
+  margin-left: 10px;
+  color: #ece0d1;
+}
 
-
-  
-
-  /* #startBtn {
+/* #startBtn {
     display: absolute;
     vertical-align: bottom;
     width: 150px;
     font-size: large;
     margin-top: 10px;
   } */
-  #startBtn {
-    position: absolute;
-    top: 70%;
-    left: 37%;
-    color: #ece0d1;
-    
-  }
-
-
-  #cup {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-40%, -60%);
-    
-    
-  }
 
 .navbar {
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    font:var(--textcolor) ;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  font: var(--textcolor);
 }
 
-
 #waves-effect {
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 50%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.main-content {
+  border-style: solid;
+  border-color: blue;
+  top: 50%;
+}
+
+.content {
+  position: absolute;
+  left: 40%;
+  width: 40%;
+  border-style: solid;
+  border-color: red;
+  padding: 25px;
 }
 
 #cup {
+  position: absolute;
   width: 20%;
-  height: auto;
-  
+  left: 40%;
+  top: 25%;
+  border-style: solid;
+  border-color: red;
+}
+
+#text-content {
+  position: relative;
+  top: 150%;
+}
+
+#startBtn {
+  color: #ece0d1;
 }
 
 #cup-responsive {
   width: 100%;
   height: auto;
-
+  shape-outside: circle(50%);
 }
 
-
 @media (max-width: 960px) {
-  nav ul     { display: none; }
-  nav select { display: block; }
+  nav ul {
+    display: none;
+  }
+  nav select {
+    display: block;
+  }
 }
 
 /* Navbar Responsive */
-
-
-
-
 
 .topnav .active {
   float: left;
@@ -127,8 +132,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .top-nav a:not(:first-child) {display: none;}
-  .right-nav a:not(:last-child) {display: none;}
+  .top-nav a:not(:first-child) {
+    display: none;
+  }
+  .right-nav a:not(:last-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -138,7 +147,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -150,11 +161,10 @@
     text-align: left;
   }
 
-  .topnav.responsive .right-nav a{
+  .topnav.responsive .right-nav a {
     font-size: 11px;
   }
 }
-
 
 .right-nav a {
   float: right;
@@ -164,4 +174,27 @@
   padding: 22px 46px;
   text-decoration: none;
   font-size: 15px;
+}
+
+.container {
+  width: 98%;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  text-align: justify;
+}
+
+/* .centerimage {
+  clip-path: url(../images/coffee-cup2.png);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+} */
+
+.centerimage {
+  width: 50%;
+  position: relative;
+  text-align: justify;
 }

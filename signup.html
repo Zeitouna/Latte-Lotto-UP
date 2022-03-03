@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
 
     <link rel="stylesheet" href="assets/css/signup.css" />
     <script src="signup.js"></script>
 
     <!--connect to google fonts-->
-     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-     
-     <!--Navbar-->
-     <nav>
-         <div class="home-button"> 
-             <a href="index.html" id="latteBtn">Latte-Lotto</a>
-         </div>
-       </nav>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Navbar-->
+    <nav>
+      <div class="home-button">
+        <a href="index.html" id="latteBtn">Latte-Lotto</a>
+      </div>
+    </nav>
+  </head>
+  <body>
     <div>
-        <h3 id="create_account">Create Account</h3>
+      <h3 id="create_account">Create Account</h3>
     </div>
-<!--Coffe Cup-->
+    <!--Coffe Cup-->
     <section class="big_cup">
-        <img src="assets/images/coffee-cup2.png"
-              alt="Coffee Cup"
-              width="600"
-              height="800">
-    
+      <img
+        src="assets/images/coffee-cup2.png"
+        alt="Coffee Cup"
+        width="600"
+        height="800"
+      />
     </section>
-<!--sign up inforation-->
-<section class="account">   
-
-    
-    <!--FIRST NAME--> 
-    <div>
-        <input id="name" type="First Name" placeholder="First Name">
-    </div>
-    <!--LAST NAME-->
-    <div>
-        <input id="last_name" type="First Name" placeholder="Last Name">
-    </div>
-    <!--dropdown menu for USER GROUP-->
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn" >User Group</button>
+    <!--sign up inforation-->
+    <section class="account">
+      <!--FIRST NAME-->
+      <div>
+        <input id="name" type="First Name" placeholder="First Name" />
+      </div>
+      <!--LAST NAME-->
+      <div>
+        <input id="last_name" type="First Name" placeholder="Last Name" />
+      </div>
+      <!--dropdown menu for USER GROUP-->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">User Group</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-          </div>
-    </div>
-    <!--dropdown menu for CADENCE-->
-    <div class="dropdownCadence ">
-        <button onclick="myFunction()" class="dropbtn" >Cadence</button>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+      </div>
+      <!-- dropdown menu for CADENCE
+      <div class="dropdownCadence">
+        <button onclick="myFunction()" class="dropbtn">Cadence</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-          </div>
-    </div>
-    <!--Email-->
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+      </div> -->
+      <!--Email-->
+      <div>
+        <input id="email" type="E-mail" placeholder="E-mail" />
+      </div>
+      <!--Password-->
+      <div>
+        <input id="password" type="Password" placeholder="Password" />
+      </div>
+      <!--Confirm Password-->
+      <div>
+        <input
+          id="confirm"
+          type="Confirm Password"
+          placeholder="Confirm Password"
+        />
+      </div>
+
+      <div class="signUp">
+        <a href="success.html" id="signUpBtn">Sign Up</a>
+      </div>
+    </section>
+
+    <!--sign up cloud if user never created account-->
     <div>
-        <input id="email" type="E-mail" placeholder="E-mail">
+      <img
+        id="cloud"
+        src="assets/images/cloud.png"
+        alt="cloud"
+        width="400"
+        height="400"
+      />
+      <p id="have-account">
+        Already have an account?
+        <a id="no-deco" href="2ndpage.html"> <strong>Sign in here!</strong> </a>
+      </p>
     </div>
-    <!--Password-->
-    <div>
-        <input id="password" type="Password" placeholder="Password">
-    </div>
-    <!--Confirm Password-->
-    <div> 
-        <input id="confirm" type="Confirm Password" placeholder="Confirm Password">
-    </div>
-
-    <div class="signUp"> 
-        <a href="" id="signUpBtn">Sign Up</a> 
-    </div>
-</section>
-
- <!--sign up cloud if user never created account-->
- <div>
-    <img id="cloud" src="assets/images/cloud.png"
-  alt="cloud"
-  width="400"
-  height="400">
-  <p id="have-account">
-      Already have an account? <a id="no-deco" href="2ndpage.html"> <strong >Sign in here!</strong> </a>
-  </p>
-  
-
-</div>
-
-
-</body>
+  </body>
 </html>
