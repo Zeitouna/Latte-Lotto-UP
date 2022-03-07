@@ -14,7 +14,7 @@ body {
     to right,
     rgb(89, 53, 25) 0%,
     rgb(156, 96, 50) 50%,
-    rgb(236, 147, 79) 100%
+    rgb(214, 140, 83) 100%
   );
   /* background-color: var(--backGr); */
 }
@@ -209,7 +209,7 @@ h5 {
 
 .text p {
   font-size: 15px;
-  font-style: italic;
+  font-style: normal;
   height: 100%;
   line-height: 1.25;
   padding: 0;

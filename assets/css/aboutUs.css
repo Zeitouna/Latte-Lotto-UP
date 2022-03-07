@@ -15,7 +15,6 @@ body {
   font-size: large;
 }
 
-
 .mainPage {
   display: flex;
   display: grid;
@@ -37,36 +36,15 @@ body {
 .navbar {
   color: #634832;
   background: #ece0d1;
-  font:var(--textcolor);
+  font: var(--textcolor);
 }
 
 .about-us {
-  top: 50%;
-}
-
-#lars {
-  transform: scale(1.9) translate(0, 60%);
-  position: relative;
-  border-radius: 100px;
-  padding: 15px;
-  animation-name: lars;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
-  border-radius: 100px;
-}
-
-@keyframes lars {
-  from {
-    left: -230px;
-  }
-  to {
-    left: 35%;
-  }
+  top: 60%;
 }
 
 #niko {
-  transform: scale(1.9) translate(0, 60%);
+  transform: scale(3.9) translate(-10%, 50%);
   position: relative;
   border-radius: 100px;
   padding: 15px;
@@ -87,7 +65,7 @@ body {
 }
 
 #oli {
-  transform: scale(1.9) translate(0, 60%);
+  transform: scale(3.9) translate(0, 60%);
   position: relative;
   border-radius: 100px;
   padding: 15px;
@@ -100,10 +78,10 @@ body {
 
 @keyframes oli {
   from {
-    left: -130px;
+    left: -230px;
   }
   to {
-    left: 40%;
+    left: 35%;
   }
 }
 
@@ -131,19 +109,6 @@ body {
     to {opacity: 1;}
 } */
 
-.about-lars {
-  position: absolute;
-  width: 400px;
-  height: 100px;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 10%;
-  overflow: hidden;
-  animation-delay: 5s;
-  animation: animate 5s linear forwards;
-  color: #38220f  ;
-}
-
 @keyframes animate {
   0% {
     width: 0px;
@@ -165,12 +130,12 @@ body {
   height: 100px;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  left: 10%;
+  right: 20%;
+  top: 70%;
   overflow: hidden;
   animation-delay: 5s;
   animation: animate 5s linear forwards;
   color: #38220f;
-
 }
 
 #about-niko {
@@ -179,12 +144,11 @@ body {
   height: 100px;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  right: 8%;
+  left: 25%;
   overflow: hidden;
   animation-delay: 5s;
   animation: animate 5s linear forwards;
   color: #38220f;
-
 }
 
 /*Responsive layer*/
@@ -195,28 +159,6 @@ body {
     top: 10%;
   }
 } */
-
-@media (max-width: 1080px) {
-  #larsH {
-    position: absolute;
-    padding-bottom: 5%;
-    top: 12%;
-
-  }
-}
-
-@media (max-width: 1080px) {
-  .about-lars {
-    position: absolute;
-    padding-bottom: 5%;
-    transform: scale(0.5);
-    max-width: 380px;
-    left: 60%;
-
-  }
-}
-
-
 
 /*media for NIKO*/
 @media (max-width: 1080px) {
@@ -232,18 +174,14 @@ body {
     position: absolute;
     transform: scale(0.5);
     max-width: 380px;
-    right: -30%;
-
+    right: 300%;
   }
 }
-
-
 
 @media (max-width: 1080px) {
   #oliR {
     position: absolute;
     top: 50%;
-    
   }
 }
 
@@ -256,10 +194,8 @@ body {
     transform: scale(0.5);
     max-width: 380px;
     left: 65%;
-
   }
 }
-
 
 /* Navbar Responsive */
 .navbar .topnav a.active {
@@ -290,8 +226,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .top-nav a:not(:first-child) {display: none;}
-  .right-nav a:not(:last-child) {display: none;}
+  .top-nav a:not(:first-child) {
+    display: none;
+  }
+  .right-nav a:not(:last-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -301,7 +241,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -313,12 +255,11 @@ body {
     text-align: left;
   }
 
-  .topnav.responsive .right-nav a{
+  .topnav.responsive .right-nav a {
     font-size: 11px;
     padding-top: 2px;
   }
 }
-
 
 .right-nav a {
   float: right;
